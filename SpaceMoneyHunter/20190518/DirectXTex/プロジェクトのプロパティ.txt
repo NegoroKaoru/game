@@ -1,0 +1,23 @@
+プロジェクトのプロパティ
+全ての構成、プラットフォームx64で以下を追記。
+
+DX11base プロパティ ページ
+構成プロパティ
+ VC++ ディレクトリ
+  インクルードディレクトリ
+$(IncludePath);DirectXTex
+ リンカー
+  入力
+   追加の依存ファイル
+%(AdditionalDependencies);DirectXTex\$(Platform)\$(Configuration)\DirectXTex.lib
+
+全ての構成、プラットフォームx86(win32)では以下を追記。
+DX11base プロパティ ページ
+構成プロパティ
+ VC++ ディレクトリ
+  インクルードディレクトリ
+$(IncludePath);DirectXTex
+ リンカー
+  入力
+   追加の依存ファイル
+%(AdditionalDependencies);DirectXTex\$(Configuration)\DirectXTex.lib
